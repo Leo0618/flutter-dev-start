@@ -1,16 +1,15 @@
 # flutter_demo
 
-Flutter Demo.常用控件
+Flutter Demo.常用控件.
 
-## Getting Started
+Flutter开发中的一些基本操作和组件使用案例
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+### 国内镜像配置，Windows添加环境变量如下：
+    
+	键: PUB_HOSTED_URL  
+	值： https://pub.flutter-io.cn
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+	键: FLUTTER_STORAGE_BASE_URL  
+	值： https://storage.flutter-io.cn
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
