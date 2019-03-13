@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/comm_listview.dart';
-import 'package:flutter_demo/dialog/widgets_dialog.dart';
+import 'package:flutter_dev_start/comm_listview.dart';
+import 'package:flutter_dev_start/dialog/widgets_dialog.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class HintWidgetsDemo extends StatelessWidget {

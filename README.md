@@ -1,6 +1,4 @@
-# flutter_demo
-
-Flutter Demo.常用控件.
+# flutter_dev_start
 
 Flutter开发中的一些基本操作和组件使用案例
 

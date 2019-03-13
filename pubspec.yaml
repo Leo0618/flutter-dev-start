@@ -1,5 +1,5 @@
-name: flutter_demo
-description: Flutter Demo.常用控件
+name: flutter_dev_start
+description: Flutter.常用控件及基本操作使用案例
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -43,7 +43,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+  - assets/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

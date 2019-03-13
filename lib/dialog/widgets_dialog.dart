@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/comm_listview.dart';
-import 'package:flutter_demo/dialog/dialog_custom_message.dart';
-import 'package:flutter_demo/dialog/dialog_loading.dart';
+import 'package:flutter_dev_start/comm_listview.dart';
+import 'package:flutter_dev_start/dialog/dialog_custom_message.dart';
+import 'package:flutter_dev_start/dialog/dialog_loading.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class DialogDemo extends StatelessWidget {
