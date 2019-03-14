@@ -25,6 +25,9 @@ dependencies:
   cupertino_icons: ^0.1.2
   # 弹吐司
   fluttertoast: ^2.0.3
+  # SeekBar
+  flutter_seekbar:
+    git: https://github.com/LiuC520/flutter_seekbar.git
 
 dev_dependencies:
   flutter_test:

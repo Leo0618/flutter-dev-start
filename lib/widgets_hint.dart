@@ -3,6 +3,7 @@ import 'package:flutter_dev_start/comm_listview.dart';
 import 'package:flutter_dev_start/dialog/widgets_dialog.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+//提示类控件示例
 class HintWidgetsDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

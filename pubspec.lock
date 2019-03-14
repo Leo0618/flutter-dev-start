@@ -41,6 +41,15 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_seekbar:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "2b37f1620b5d5fbf32feb350d43567a2b45b5fa2"
+      url: "https://github.com/LiuC520/flutter_seekbar.git"
+    source: git
+    version: "0.0.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
