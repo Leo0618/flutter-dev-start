@@ -1,11 +1,14 @@
+import 'package:flutter/rendering.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dev_start/IO.dart';
 import 'package:flutter_dev_start/comm_listview.dart';
 import 'package:flutter_dev_start/widgets_hint.dart';
 import 'package:flutter_dev_start/widgets_progressbar.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  debugPaintSizeEnabled = false;
+  runApp(new MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -16,7 +19,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: MyHomePage(title: 'Flutter 基本操作'),
+      home: MyHomePage(title: 'Flutter Dev Start'),
+      routes: <String, WidgetBuilder>{
+        '/0': (BuildContext context) => new HintWidgetsDemo(),
+        '/1': (BuildContext context) => new ProgressBarWidgetsDemo(),
+        '/2': (BuildContext context) => new ReadAndWriteDemo(),
+      },
     );
   }
 }
@@ -53,19 +61,19 @@ class _MyHomePageState extends State<MyHomePage> {
       new ListItem(
         txt: '各种提示类控件',
         onTap: () {
-          Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new HintWidgetsDemo()));
+          Navigator.pushNamed(context, "/0");
         },
       ),
       new ListItem(
         txt: '进度条',
         onTap: () {
-          Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new ProgressBarWidgetsDemo()));
+          Navigator.pushNamed(context, "/1");
         },
       ),
       new ListItem(
         txt: 'IO操作',
         onTap: () {
-          Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new ReadAndWriteDemo()));
+          Navigator.pushNamed(context, "/2");
         },
       ),
     ];
