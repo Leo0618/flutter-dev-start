@@ -11,7 +11,7 @@ description: Flutter.常用控件及基本操作使用案例
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 1.2.1
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -28,6 +28,8 @@ dependencies:
   # SeekBar
   flutter_seekbar:
     git: https://github.com/LiuC520/flutter_seekbar.git
+  # 读取与写入文件
+  path_provider: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -46,7 +48,7 @@ flutter:
   uses-material-design: true
 
   assets:
-  - assets/
+    - assets/images/avatar.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

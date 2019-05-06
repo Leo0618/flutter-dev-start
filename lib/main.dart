@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dev_start/IO.dart';
 import 'package:flutter_dev_start/comm_listview.dart';
 import 'package:flutter_dev_start/widgets_hint.dart';
 import 'package:flutter_dev_start/widgets_progressbar.dart';
@@ -61,11 +62,10 @@ class _MyHomePageState extends State<MyHomePage> {
           Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new ProgressBarWidgetsDemo()));
         },
       ),
-      //TODO
       new ListItem(
         txt: 'IO操作',
         onTap: () {
-          Fluttertoast.showToast(msg: '敬请期待');
+          Navigator.push(context, new MaterialPageRoute(builder: (BuildContext context) => new ReadAndWriteDemo()));
         },
       ),
     ];

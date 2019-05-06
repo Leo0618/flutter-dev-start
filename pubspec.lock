@@ -46,10 +46,10 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: "2b37f1620b5d5fbf32feb350d43567a2b45b5fa2"
+      resolved-ref: "96e16c007f0d9ce02aff90aa8a1a3667ab933dd7"
       url: "https://github.com/LiuC520/flutter_seekbar.git"
     source: git
-    version: "0.0.2"
+    version: "0.0.3"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -83,6 +83,13 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.6.2"
+  path_provider:
+    dependency: "direct main"
+    description:
+      name: path_provider
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.0"
   pedantic:
     dependency: transitive
     description:
@@ -160,3 +167,4 @@ packages:
     version: "2.0.8"
 sdks:
   dart: ">=2.1.0 <3.0.0"
+  flutter: ">=0.1.4 <2.0.0"
