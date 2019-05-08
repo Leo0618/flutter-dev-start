@@ -36,6 +36,15 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.1.2"
+  flog:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: d9069408d82b2583014d35055bdbe01f3d80c310
+      url: "https://github.com/Leo0618/flog.git"
+    source: git
+    version: "0.0.1"
   flutter:
     dependency: "direct main"
     description: flutter

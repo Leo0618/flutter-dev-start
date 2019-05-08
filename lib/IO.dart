@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:io';
 import 'dart:async';
 import 'package:path_provider/path_provider.dart';
+import 'package:flog/flog.dart';
 
 class ReadAndWriteDemo extends StatefulWidget {
   @override
@@ -13,8 +14,8 @@ class ReadAndWriteDemo extends StatefulWidget {
   showFilePath() async {
     String dirTemp = (await getTemporaryDirectory()).path;
     String dirDoc = (await getApplicationDocumentsDirectory()).path;
-    print("getTemporaryDirectory====>" + dirTemp);
-    print("getApplicationDocumentsDirectory====>" + dirDoc);
+    Flog.d("getTemporaryDirectory====>" + dirTemp, tag: 'IO');
+    Flog.d("getApplicationDocumentsDirectory====>" + dirDoc, tag: "IO");
   }
 }
 

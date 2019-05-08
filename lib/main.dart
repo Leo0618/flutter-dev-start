@@ -2,9 +2,11 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dev_start/comm_listview.dart';
 import 'package:flutter_dev_start/configs.dart';
+import 'package:flog/flog.dart';
 
 void main() {
   debugPaintSizeEnabled = false;
+  Flog.config(true);
   runApp(new MyApp());
 }
 
@@ -39,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return new Scaffold(
       appBar: new AppBar(
+        leading: new Center(child: new Image.asset('assets/images/avatar.png', width: 40, height: 40)),
         title: Text(widget.title),
         centerTitle: true,
       ),

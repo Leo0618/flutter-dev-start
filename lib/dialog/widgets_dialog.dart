@@ -47,6 +47,12 @@ class DialogDemo extends StatelessWidget {
           showCustomMessageDialog(context);
         },
       ),
+      new ListItem(
+        txt: 'CupertinoAlertDialog',
+        onTap: () {
+          showCupertinoAlertDialog(context);
+        },
+      ),
     ];
     return datas;
   }
@@ -137,5 +143,40 @@ class DialogDemo extends StatelessWidget {
             },
           );
         });
+  }
+
+  //提示 Cupertino对话框
+  void showCupertinoAlertDialog(BuildContext context) {
+    showDialog<bool>(
+        context: context,
+        barrierDismissible: false, //不允许点击外部区域关闭
+        builder: (context) => new CupertinoAlertDialog(
+                title: new Text("Dialog 标题"),
+                content: SingleChildScrollView(
+                  child: ListBody(
+                    children: <Widget>[
+                      Text('这是个对话框你知道吗？'),
+                      Text('不知道就算了'),
+                    ],
+                  ),
+                ),
+                actions: <Widget>[
+                  new CupertinoButton(
+                    child: new Text("取消"),
+                    onPressed: () {
+                      Fluttertoast.showToast(msg: '取消');
+                      Navigator.of(context).pop(false);
+                    },
+                  ),
+                  new CupertinoButton(
+                    child: new Text("确定"),
+                    onPressed: () {
+                      Fluttertoast.showToast(msg: '确定');
+                      Navigator.of(context).pop(true);
+                    },
+                  ),
+                ])).then((bool data) {
+      print('data===>$data');
+    });
   }
 }

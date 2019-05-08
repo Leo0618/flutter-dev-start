@@ -30,6 +30,9 @@ dependencies:
     git: https://github.com/LiuC520/flutter_seekbar.git
   # 读取与写入文件
   path_provider: ^1.0.0
+  # log
+  flog:
+    git: https://github.com/Leo0618/flog.git
 
 dev_dependencies:
   flutter_test:
