@@ -3,6 +3,7 @@ import 'dart:io';
 import 'dart:async';
 import 'package:path_provider/path_provider.dart';
 import 'package:flog/flog.dart';
+import 'package:sprintf/sprintf.dart';
 
 class ReadAndWriteDemo extends StatefulWidget {
   @override
@@ -16,6 +17,8 @@ class ReadAndWriteDemo extends StatefulWidget {
     String dirDoc = (await getApplicationDocumentsDirectory()).path;
     Flog.d("getTemporaryDirectory====>" + dirTemp, tag: 'IO');
     Flog.d("getApplicationDocumentsDirectory====>" + dirDoc, tag: "IO");
+    String msg = sprintf("测试%s是否作用%s", ["sprintf", "true"]);
+    Flog.i(msg);
   }
 }
 
